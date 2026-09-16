@@ -10,6 +10,9 @@
     <title>Canaanland Home Page</title>
 
     <link rel="stylesheet" href="HOME2.css">
+
+    <!-- Load the first visible slider image immediately -->
+    <link rel="preload" as="image" href="black photocopy.jpg">
 </head>
 
 <body>
@@ -22,7 +25,9 @@
         <a href="HOME.html" class="brand">
 
             <div class="brand-mark">
-                <img src="canaanland logo.jpg" alt="Canaanland Tech Solutions Logo">
+                <img src="canaanland logo.jpg"
+                     alt="Canaanland Tech Solutions Logo"
+                     fetchpriority="high">
             </div>
 
             <div class="brand-text">
@@ -179,7 +184,7 @@
 
 
             <p class="home-number">
-                📱  09157786010
+                📱 09157786010
             </p>
 
         </div>
@@ -198,70 +203,80 @@
 
                         <div class="slide">
                             <img src="black photocopy.jpg"
-                                 alt="Black photocopy">
+                                 alt="Black photocopy"
+                                 fetchpriority="high">
                             <h2>PHOTOCOPY</h2>
                         </div>
 
 
                         <div class="slide">
                             <img src="colour printer.jpg"
-                                 alt="Colour printing">
+                                 alt="Colour printing"
+                                 loading="lazy">
                             <h2>COLOUR PRINTING</h2>
                         </div>
 
 
                         <div class="slide">
                             <img src="id card printer.jpg"
-                                 alt="ID card printing">
+                                 alt="ID card printing"
+                                 loading="lazy">
                             <h2>ID CARD PRINTING</h2>
                         </div>
 
 
                         <div class="slide">
                             <img src="coding 1.png"
-                                 alt="Web design">
+                                 alt="Web design"
+                                 loading="lazy">
                             <h2>WEB DESIGN</h2>
                         </div>
 
 
                         <div class="slide">
                             <img src="coding 2.jpg"
-                                 alt="Website design codes">
+                                 alt="Website design codes"
+                                 loading="lazy">
                             <h2>WEBSITE DESIGN CODES</h2>
                         </div>
 
 
                         <div class="slide">
                             <img src="coding 3.jpg"
-                                 alt="Website design class">
+                                 alt="Website design class"
+                                 loading="lazy">
                             <h2>WEBSITE DESIGN CLASS</h2>
                         </div>
 
 
                         <div class="slide">
                             <img src="boss man.jpg"
-                                 alt="Online services">
+                                 alt="Online services"
+                                 loading="lazy">
                             <h2>ONLINE SERVICES</h2>
                         </div>
 
 
                         <div class="slide">
                             <img src="training 1.jpg"
-                                 alt="Typesetting">
+                                 alt="Typesetting"
+                                 loading="lazy">
                             <h2>TYPESETTING</h2>
                         </div>
 
 
                         <div class="slide">
                             <img src="training 2.jpg"
-                                 alt="Training in progress">
+                                 alt="Training in progress"
+                                 loading="lazy">
                             <h2>TRAINING IN PROGRESS</h2>
                         </div>
 
 
                         <div class="slide">
                             <img src="computer.png"
-                                 alt="Laptop repair">
+                                 alt="Laptop repair"
+                                 loading="lazy">
                             <h2>REPAIRING OF LAPTOPS</h2>
                         </div>
 
