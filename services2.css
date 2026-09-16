@@ -1,0 +1,910 @@
+/* =========================================
+   RESET
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --blue: #078bea;
+    --dark: #031020;
+    --dark2: #071a2e;
+    --white: #ffffff;
+    --text: #101820;
+    --muted: #a9bac9;
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f8fc;
+    color: #111827;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.header {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    z-index: 1000;
+
+    background: white;
+
+    backdrop-filter: blur(14px);
+
+    border-bottom: 1px solid #ddd;
+}
+
+
+/* =========================================
+   NAVBAR
+========================================= */
+
+.navbar {
+    width: 92%;
+
+    max-width: 1350px;
+
+    min-height: 82px;
+
+    margin: auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    padding: 10px 40px;
+
+    background: white;
+}
+
+
+/* =========================================
+   BRAND
+========================================= */
+
+.brand {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    color: black;
+
+    min-width: 0;
+}
+
+.brand-mark {
+    border-radius: 10px;
+
+    flex-shrink: 0;
+}
+
+.brand-mark img {
+    width: 100px;
+
+    height: 100px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 5px solid white;
+}
+
+.brand-text {
+    min-width: 0;
+}
+
+.brand-text strong {
+    display: block;
+
+    font-size: 18px;
+
+    letter-spacing: 1px;
+
+    white-space: nowrap;
+}
+
+.brand-text span {
+    display: block;
+
+    color: #0b9cff;
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+
+    margin-top: 4px;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   NAVIGATION
+========================================= */
+
+.nav-links {
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    list-style: none;
+
+    margin: 0;
+
+    padding: 0;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links li a {
+    display: block;
+
+    margin-left: 0;
+}
+
+
+/* NAV BUTTON */
+
+.nav-links button {
+    background: white;
+
+    border: 1px solid black;
+
+    border-radius: 5px;
+
+    padding: 5px 8px;
+
+    font-size: 13px;
+
+    color: black;
+
+    cursor: pointer;
+
+    transition: 0.25s;
+}
+
+.nav-links button:hover {
+    background: #f1f1f1;
+
+    color: #078bea;
+}
+
+
+/* WHATSAPP */
+
+.nav-whatsapp {
+    display: block;
+
+    background: #12b95c;
+
+    color: black !important;
+
+    padding: 10px 14px;
+
+    border-radius: 20px;
+
+    font-weight: 600;
+
+    white-space: nowrap;
+}
+
+.nav-whatsapp:hover {
+    background: #0da34f;
+}
+
+
+/* =========================================
+   HAMBURGER
+========================================= */
+
+#menu-toggle {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+
+    width: 44px;
+
+    height: 44px;
+
+    flex-shrink: 0;
+
+    cursor: pointer;
+
+    border: 1px solid #ccc;
+
+    border-radius: 7px;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-direction: column;
+
+    gap: 5px;
+}
+
+.hamburger span {
+    display: block;
+
+    width: 24px;
+
+    height: 3px;
+
+    background: #111;
+
+    border-radius: 3px;
+
+    transition: 0.25s;
+}
+
+
+/* =========================================
+   SERVICES SECTION
+========================================= */
+
+.services {
+    width: 100%;
+
+    min-height: 100vh;
+
+    padding: 130px 7% 80px;
+
+    background: #f5f8fc;
+
+    display: flex;
+
+    align-items: center;
+}
+
+
+/* =========================================
+   CONTAINER
+========================================= */
+
+.services-container {
+    width: 100%;
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    text-align: center;
+}
+
+
+/* =========================================
+   SECTION TITLE
+========================================= */
+
+.services-subtitle {
+    color: #087ac1;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 12px;
+}
+
+.services h1 {
+    color: #082b70;
+
+    font-size: 48px;
+
+    font-weight: 800;
+
+    margin-bottom: 18px;
+}
+
+.services-intro {
+    max-width: 650px;
+
+    margin: 0 auto 50px;
+
+    color: #667085;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   SERVICE GRID
+========================================= */
+
+.service-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+/* =========================================
+   SERVICE CARD
+========================================= */
+
+.service-card {
+    background: #ffffff;
+
+    padding: 35px 25px;
+
+    border-radius: 15px;
+
+    border: 1px solid #e4eaf1;
+
+    box-shadow:
+        0 8px 25px
+        rgba(0, 0, 0, 0.07);
+
+    transition: all 0.3s ease;
+
+    min-width: 0;
+}
+
+
+/* CARD HOVER */
+
+.service-card:hover {
+    transform: translateY(-8px);
+
+    border-color: #087ac1;
+
+    box-shadow:
+        0 15px 35px
+        rgba(8, 122, 193, 0.18);
+}
+
+
+/* =========================================
+   ICON
+========================================= */
+
+.service-icon {
+    width: 75px;
+
+    height: 75px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #e7f6ff;
+
+    font-size: 34px;
+}
+
+
+/* =========================================
+   CARD TITLE
+========================================= */
+
+.service-card h2 {
+    color: #082b70;
+
+    font-size: 20px;
+
+    margin-bottom: 14px;
+
+    line-height: 1.3;
+}
+
+
+/* =========================================
+   CARD DESCRIPTION
+========================================= */
+
+.service-card p {
+    color: #667085;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+
+    .navbar {
+        padding: 10px 25px;
+    }
+
+    .nav-links {
+        gap: 10px;
+    }
+
+    .brand-mark img {
+        width: 75px;
+
+        height: 75px;
+    }
+
+    .brand-text strong {
+        font-size: 14px;
+    }
+
+    .brand-text span {
+        font-size: 7px;
+    }
+
+    .services {
+        padding: 120px 5% 70px;
+    }
+
+    .services h1 {
+        font-size: 40px;
+    }
+
+    .service-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 750px) {
+
+    /* HEADER */
+
+    .navbar {
+        width: 100%;
+
+        min-height: 70px;
+
+        padding: 7px 15px;
+
+        gap: 10px;
+    }
+
+
+    /* BRAND */
+
+    .brand {
+        gap: 8px;
+
+        max-width: calc(100% - 55px);
+    }
+
+
+    .brand-mark img {
+        width: 58px;
+
+        height: 58px;
+
+        border-width: 3px;
+    }
+
+
+    .brand-text {
+        overflow: hidden;
+    }
+
+
+    .brand-text strong {
+        font-size: 12px;
+
+        letter-spacing: 0.5px;
+
+        white-space: nowrap;
+    }
+
+
+    .brand-text span {
+        font-size: 6px;
+
+        letter-spacing: 0.8px;
+
+        white-space: nowrap;
+    }
+
+
+    /* HAMBURGER */
+
+    .hamburger {
+        display: flex;
+    }
+
+
+    /* MOBILE NAV */
+
+    .nav-links {
+
+        position: absolute;
+
+        top: 70px;
+
+        right: 15px;
+
+        width: calc(100% - 30px);
+
+        max-width: 350px;
+
+        padding: 15px;
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 8px;
+
+        background: white;
+
+        border-radius: 12px;
+
+        box-shadow:
+            0 8px 30px
+            rgba(0,0,0,0.25);
+
+        opacity: 0;
+
+        visibility: hidden;
+
+        transform: translateY(-10px);
+
+        transition: 0.25s;
+    }
+
+
+    #menu-toggle:checked ~ .nav-links {
+
+        opacity: 1;
+
+        visibility: visible;
+
+        transform: translateY(0);
+    }
+
+
+    .nav-links li {
+        width: 100%;
+    }
+
+
+    .nav-links li a {
+        width: 100%;
+    }
+
+
+    .nav-links button {
+
+        width: 100%;
+
+        min-height: 42px;
+
+        padding: 10px 13px;
+
+        text-align: left;
+
+        font-size: 14px;
+    }
+
+
+    .nav-whatsapp {
+
+        width: 100%;
+
+        padding: 11px;
+
+        text-align: center;
+
+        border-radius: 7px;
+    }
+
+
+    /* HAMBURGER ANIMATION */
+
+    #menu-toggle:checked + .hamburger span:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    #menu-toggle:checked + .hamburger span:nth-child(2) {
+        opacity: 0;
+    }
+
+    #menu-toggle:checked + .hamburger span:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+
+    /* SERVICES */
+
+    .services {
+
+        min-height: auto;
+
+        padding: 105px 20px 60px;
+    }
+
+
+    .services-subtitle {
+
+        font-size: 13px;
+
+        letter-spacing: 1.5px;
+
+        margin-bottom: 10px;
+    }
+
+
+    .services h1 {
+
+        font-size: 34px;
+
+        margin-bottom: 15px;
+    }
+
+
+    .services-intro {
+
+        font-size: 15px;
+
+        line-height: 1.7;
+
+        margin-bottom: 35px;
+    }
+
+
+    /* ONE CARD PER ROW */
+
+    .service-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+
+        width: 100%;
+    }
+
+
+    /* CARD */
+
+    .service-card {
+
+        width: 100%;
+
+        padding: 30px 20px;
+
+        border-radius: 15px;
+    }
+
+
+    .service-icon {
+
+        width: 70px;
+
+        height: 70px;
+
+        font-size: 32px;
+
+        margin-bottom: 18px;
+    }
+
+
+    .service-card h2 {
+
+        font-size: 19px;
+
+        margin-bottom: 12px;
+    }
+
+
+    .service-card p {
+
+        font-size: 14px;
+
+        line-height: 1.7;
+    }
+}
+
+
+/* =========================================
+   SMALL PHONES
+========================================= */
+
+@media (max-width: 400px) {
+
+    .navbar {
+        padding: 6px 10px;
+    }
+
+
+    .brand-mark img {
+
+        width: 52px;
+
+        height: 52px;
+    }
+
+
+    .brand-text strong {
+
+        font-size: 10px;
+    }
+
+
+    .brand-text span {
+
+        font-size: 5px;
+    }
+
+
+    .hamburger {
+
+        width: 40px;
+
+        height: 40px;
+    }
+
+
+    .services {
+
+        padding-left: 14px;
+
+        padding-right: 14px;
+    }
+
+
+    .services h1 {
+
+        font-size: 31px;
+    }
+
+
+    .services-intro {
+
+        font-size: 14px;
+    }
+
+
+    .service-card {
+
+        padding: 27px 17px;
+    }
+
+
+    .service-card h2 {
+
+        font-size: 18px;
+    }
+
+
+    .service-card p {
+
+        font-size: 13px;
+    }
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+
+    width: 100%;
+
+    background: #020810;
+
+    color: #899aaa;
+
+    text-align: center;
+
+    padding: 15px 20px;
+
+    font-size: 12px;
+}
+
+footer strong {
+
+    color: white;
+
+    letter-spacing: 1px;
+}
+
+footer p {
+
+    margin-top: 7px;
+
+    line-height: 1.5;
+}
+
+footer a {
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+footer a:hover {
+
+    color: #00bfff;
+}
+
+
+/* =========================================
+   MOBILE FOOTER
+========================================= */
+
+@media (max-width: 500px) {
+
+    footer {
+
+        padding: 15px 12px;
+
+        font-size: 10px;
+    }
+
+    footer p {
+
+        margin-top: 6px;
+
+        line-height: 1.5;
+    }
+}
